@@ -9,6 +9,7 @@ const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('connect-flash');
+const exphbs = require('express-handlebars');
 
 require('./controller/passport')(passport);
 
@@ -27,12 +28,14 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 require('./routes/products-api')(app);
 require('./routes/users-api')(app, passport);
 
 app.get('/', (req, res, next)=> {
-    res.sendFile('./index.html');
+    res.render('home');
 });
 
 app.get('/failure', (req, res, next)=> {
