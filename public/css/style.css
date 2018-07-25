@@ -1,11 +1,18 @@
+#myNavbar {
+    background-color: transparent;
+}
+
+a.navLink:hover {
+    color: white;
+}
 
 .parallax { 
     /* The image used */
     background-image: url("../images/neuschweinstein.JPG");
+    /* background-image: url("../images/trees.JPG"); */
 
     /* Set a specific height */
     height: 500px; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -13,16 +20,22 @@
     background-size: cover;
 }
 
-.parallax-1 { 
-    /* The image used */
-    background-image: url("../images/bergen.JPG");
+.bio-section {
+    background-color: white;
+}
 
-    /* Set a specific height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 700px) {
+    .parallax { 
+        /* The image used */
+        background-image: url("../images/sierra-nevada.JPG");
+    
+        /* Set a specific height */
+        height: 500px; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
