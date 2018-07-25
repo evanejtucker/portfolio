@@ -1,0 +1,28 @@
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/neuschweinstein.JPG");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 { 
+    /* The image used */
+    background-image: url("../images/bergen.JPG");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
