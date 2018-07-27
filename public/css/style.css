@@ -1,3 +1,7 @@
+body {
+    background-color: #EBF4FA;
+}
+
 #myNavbar {
     background-color: transparent;
 }
@@ -21,22 +25,30 @@ a.nav-link, a.navbar-brand {
 }
 
 .bio-section {
-    background-color: white;
-    height: 700px;
+    background-color: #EBF4FA;
+    height: 500px;
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 1000px) {
     .parallax { 
-        /* The image used */
-        background-image: url("../images/sierra-nevada.JPG");
-    
-        /* Set a specific height */
-        height: 500px; 
-    
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url("../images/bergen.JPG");
+    }
+} */
+
+@media (max-width: 667px) {
+    .parallax { 
+        background-image: url("../images/flam.JPG");
+    }
+}
+
+@media (min-height: 900px) {
+    .parallax { 
+        height: 800px; 
+    }
+}
+
+@media (max-height: 450px) {
+    .parallax { 
+        height: 300px; 
     }
 }
